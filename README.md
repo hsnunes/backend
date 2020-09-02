@@ -1,8 +1,7 @@
-# backend
-Criação de uma estrutura Backend PHP, no Paradigma Funcional
+## Criação de uma estrutura Backend PHP, no Paradigma Funcional
 
-Desenvolvimento:
-
-# Document Root;
-# Rotas com url amigáveis
-# Templates das Requisições
+#### Desenvolvimento:
+1- Document Root;
+2- Rotas com url amigáveis;
+3- Templates das Requisições;
+4- Quebrando as responsabilidades;
