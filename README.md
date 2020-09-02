@@ -5,3 +5,4 @@
 2- Rotas com url amigáveis;
 3- Templates das Requisições;
 4- Quebrando as responsabilidades;
+5- Tratamento de Erros;

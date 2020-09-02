@@ -1,3 +1,5 @@
 <?php
 
-echo 'Conn!';
+mysqli_report(MYSQLI_REPORT_ERROR);
+
+$conn = new mysqli('localhost', 'root', 'root', 'basemysql');
