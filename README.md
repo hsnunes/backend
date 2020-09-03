@@ -7,3 +7,5 @@
 4- Quebrando as responsabilidades;
 5- Tratamento de Erros;
 6- Configuração Geral;
+7- Ajustando Status Code da aplicação;
+8- Inserindo Framework Bootstrap 4.5;

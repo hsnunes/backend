@@ -1,13 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <title>Painel Administrativo</title>
-</head>
-<body>
-    <h1>Dashboard</h1>
+  </head>
+  <body>
     <?php include $content; ?>
-    
-</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/popper.js@1.16.1_dist_umd_popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>
