@@ -6,3 +6,4 @@
 3- Templates das Requisições;
 4- Quebrando as responsabilidades;
 5- Tratamento de Erros;
+6- Configuração Geral;

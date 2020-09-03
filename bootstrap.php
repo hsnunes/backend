@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__ . '/config.php';
 require __DIR__ . '/src/error_handler.php';
 require __DIR__ . '/src/connection.php';
 require __DIR__ . '/src/resolve-router.php';
