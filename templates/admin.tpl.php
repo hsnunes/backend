@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/trix/trix.css">
     <link rel="stylesheet" href="/css/dashboardModel.css">
 
     <title>Painel Administrativo</title>
@@ -39,6 +40,7 @@
     <script src="/js/feather-icons_4.9.0.min.js"></script>
     <script src="/js/Chart_2.7.3.min.js"></script>
     <script src="/js/dashboard.js"></script>
+    <script src="/resources/trix/trix.js"></script>
 
   </body>
 </html>
