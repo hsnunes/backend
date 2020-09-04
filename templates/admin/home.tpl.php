@@ -11,9 +11,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/admin/pages">
               <span data-feather="file"></span>
-              Orders
+              Páginas
             </a>
           </li>
           <li class="nav-item">
@@ -92,7 +92,7 @@
         </div>
       </div>
 
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
 
       <h2>Section title</h2>
       <div class="table-responsive">
