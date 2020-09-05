@@ -41,6 +41,7 @@
     <!-- <script src="/js/Chart_2.7.3.min.js"></script> -->
     <script src="/js/dashboard.js"></script>
     <script src="/resources/trix/trix.js"></script>
+    <script><?php flash(); ?></script>
 
   </body>
 </html>
