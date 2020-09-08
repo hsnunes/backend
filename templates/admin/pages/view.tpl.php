@@ -25,6 +25,6 @@
 </div>
 
 <a href="/admin/pages/1/edit" class="btn btn-warning">Editar</a>
-<a href="/admin/pages/1/delete" class="btn btn-danger">Excluir</a>
+<a href="/admin/pages/1/delete" class="btn btn-danger confirm">Excluir</a>
 <a href="/admin/pages" class="btn btn-primary">páginas</a>
 </div>
