@@ -37,10 +37,9 @@
     <script src="/js/popper.js@1.16.1_dist_umd_popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <!-- Js Extras -->
-    <script src="/js/feather-icons_4.9.0.min.js"></script>
-    <!-- <script src="/js/Chart_2.7.3.min.js"></script> -->
-    <script src="/js/dashboard.js"></script>
     <script src="/resources/trix/trix.js"></script>
+    <script src="/js/feather-icons_4.9.0.min.js"></script>
+    <script src="/js/dashboard.js"></script>
     <script><?php flash(); ?></script>
 
   </body>

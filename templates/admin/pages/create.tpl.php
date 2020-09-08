@@ -1,7 +1,7 @@
 <div class="container">
 <h3 class="m-3">Criação de Páginas</h3>
 
-<form action="#" method="post">
+<form action="#" method="POST">
     <div class="form-group">
         <label for="titlePages">Título</label>
         <input name="title" id="titlePages" type="text" class="form-control" placeholder="Título da Página">

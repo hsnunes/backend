@@ -1,1 +1,1 @@
-alert("<?php echo $data['type']; ?>" + " - " + "<?php echo $data['message']; ?>");
+alert("<?php echo $data['type']; ?>" + " - " + "<?php echo $data['message']; ?>")

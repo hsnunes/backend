@@ -19,14 +19,11 @@ if (resolve('/admin/pages/?')) {
 
 }elseif ($params = resolve('/admin/pages/(\d+)/edit')) {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $pages_create($params[1]);
+        $pages_edit($params[1]);
         return header('location: /admin/pages/'. $params[1]);
     }
     render('pages/edit', 'admin');
 }elseif ($params = resolve('/admin/pages/(\d+)/delete')) {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $pages_create($params[1]);
-        return header('location: /admin/pages');
-    }
-    header('location: /admin/pages');
+    $pages_delete($params[1]);
+    return header('location: /admin/pages');
 }

@@ -9,7 +9,6 @@ $pages_one = function ($id) {
 };
 
 $pages_create = function () {
-    // Gerencia de paginas
     flash('Criou registro com sucesso', 'success');
 };
 
@@ -20,5 +19,5 @@ $pages_edit = function ($id) {
 
 $pages_delete = function ($id) {
     // Gerencia de paginas
-    flash('Excluiu registro com sucesso', 'success');
+    flash('Exclusão registro com sucesso', 'success');
 };
