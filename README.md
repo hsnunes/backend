@@ -9,3 +9,5 @@
 6- Configuração Geral;
 7- Ajustando Status Code da aplicação;
 8- Inserindo Framework Bootstrap 4.5;
+9- Implementando Flash Messages com PNotify;
+10- Pages criadas na Base de Dados;

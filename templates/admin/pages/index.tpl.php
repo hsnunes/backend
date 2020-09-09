@@ -10,13 +10,15 @@
         </tr>
     </thead>
     <tbody>
+    <?php foreach ($data['pages'] as $page): ?>
         <tr>
-            <td>1</td>
-            <td> <a href="/admin/pages/1">Página Um</a> </td>
+            <td><?php echo $page['id']; ?></td>
+            <td> <a href="/admin/pages/<?php echo $page['id']; ?>"><?php echo $page['title']; ?></a> </td>
             <td class="text-right">
-                <a href="/admin/pages/1/edit" class="btn btn-primary">Edit</a>
+                <a href="/admin/pages/<?php echo $page['id']; ?>/edit" class="btn btn-primary">Edit</a>
             </td>
         </tr>
+    <?php endforeach; ?>
     </tbody>
 </table>
 

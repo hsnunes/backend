@@ -1,9 +1,9 @@
 <?php
 
-$pages_all = function () {
-    // Gerencia de paginas
+$pages_all = function () use ($conn) {
+    $result = $conn->query("SELECT * FROM pages");
+    return $result->fetch_all(MYSQLI_ASSOC);
 };
-
 $pages_one = function ($id) {
     // Gerencia de paginas
 };
