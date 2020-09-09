@@ -20,8 +20,15 @@ $pages_all = function () use ($conn) {
     $result = $conn->query("SELECT * FROM pages");
     return $result->fetch_all(MYSQLI_ASSOC);
 };
-$pages_one = function ($id) {
-    // Gerencia de paginas
+$pages_one = function ($id) use ($conn) {
+    $sql = "SELECT * FROM pages WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('i', $id);
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+    return $result->fetch_assoc();
+
 };
 
 $pages_create = function () use ($conn) {
@@ -36,12 +43,23 @@ $pages_create = function () use ($conn) {
     return $stmt->execute();
 };
 
-$pages_edit = function ($id) {
-    // Gerencia de paginas
+$pages_edit = function ($id) use ($conn) {
+    $data = page_get_data('/admin/pages/' . $id);
+
+    $sql = "UPDATE pages SET title=?, url=?, body=?, updated=now() WHERE id=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('sssi', $data['title'], $data['url'], $data['body'], $id);
+
     flash('Atualizou registro com sucesso', 'success');
+
+    return $stmt->execute();
 };
 
-$pages_delete = function ($id) {
-    // Gerencia de paginas
+$pages_delete = function ($id) use ($conn) {
+    $sql = "DELETE FROM pages WHERE id=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('i', $id);
+
     flash('Exclusão registro com sucesso', 'success');
+    return $stmt->execute();
 };
