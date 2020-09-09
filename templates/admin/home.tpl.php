@@ -17,14 +17,14 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Products
+            <a class="nav-link" href="/admin/users">
+            <span data-feather="users"></span>
+              Users
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="users"></span>
+            <span data-feather="shopping-cart"></span>
               Customers
             </a>
           </li>
