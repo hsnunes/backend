@@ -14,7 +14,7 @@ if (resolve('/admin/users/?')) {
     render('users/create', 'admin');
 
 } elseif ($params = resolve('/admin/users/(\d+)')) {
-    $user = $users_one($params[1]);
+    $user = $user_one($params[1]);
     render('users/view', 'admin', ['user' => $user]);
 
 } elseif ($params = resolve('/admin/users/(\d+)/edit')) {
