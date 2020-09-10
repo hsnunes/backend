@@ -15,7 +15,7 @@
     </div>
     <div class="form-group">
         <label for="editorPages">Editor de Textos</label>
-        <input name="body" type="hidden" id="bodyPages" value="<?php echo $data['page']['body']; ?>">
+        <input name="body" type="hidden" id="bodyPages" value="<?php echo htmlentities($data['page']['body']); ?>">
         <trix-editor input="bodyPages" id="editorPages"></trix-editor>
     </div>
     <button type="submit" class="btn btn-success">Salvar</button> <a href="/admin/pages" class="btn btn-primary">Páginas</a>

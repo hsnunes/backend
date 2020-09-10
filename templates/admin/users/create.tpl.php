@@ -8,7 +8,7 @@
     </div>
     <div class="form-group">
         <label for="loginUsers">Login</label>
-        <input name="url" id="loginUsers" type="text" class="form-control" placeholder="Seu Login">
+        <input name="login" id="loginUsers" type="text" class="form-control" placeholder="Seu Login">
     </div>
     <div class="form-group">
         <label for="passwdUsers">Senha</label>

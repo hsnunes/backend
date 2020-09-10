@@ -6,7 +6,7 @@ function page_get_data($redirectOnError) {
     $url = filter_input(INPUT_POST, 'url');
     $body = filter_input(INPUT_POST, 'body');
 
-    if ( is_null($title) or is_null($url)) {
+    if (!$title or !$url) {
         flash('Preencha os campos Title e Url, são obrigatórios', 'error');
         header('location: '.$redirectOnError);
         die();

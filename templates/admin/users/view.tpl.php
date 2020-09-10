@@ -1,6 +1,11 @@
 <div class="container">
 <h3 class="m-3">Visualização de Usuários</h3>
 
+<?php
+//var_dump($data);die;
+?>
+
+
 <div class="row">
     <div class="col-3">
         <dl class="row">
@@ -8,7 +13,7 @@
             <dd class="com-sm-8"><?php echo $data['user']['login']; ?></dd>
 
             <dt class="col-sm-4">Email</dt>
-            <dd class="com-sm-8"><?php echo $data['page']['email']; ?></dd>
+            <dd class="com-sm-8"><?php echo $data['user']['email']; ?></dd>
 
             <dt class="col-sm-4">Criação</dt>
             <dd class="com-sm-8"><?php echo $data['user']['created']; ?></dd>

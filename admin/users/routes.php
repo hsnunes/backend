@@ -14,7 +14,7 @@ if (resolve('/admin/users/?')) {
     render('users/create', 'admin');
 
 } elseif ($params = resolve('/admin/users/(\d+)')) {
-    $user = $user_one($params[1]);
+    $user = $users_one($params[1]);
     render('users/view', 'admin', ['user' => $user]);
 
 } elseif ($params = resolve('/admin/users/(\d+)/edit')) {
@@ -22,10 +22,10 @@ if (resolve('/admin/users/?')) {
         $users_edit($params[1]);
         return header('location: /admin/users/'. $params[1]);
     }
-    $user = $user_one($params[1]);
+    $user = $users_one($params[1]);
     render('users/edit', 'admin', ['user' => $user]);
 
 } elseif ($params = resolve('/admin/users/(\d+)/delete')) {
     $users_delete($params[1]);
-    return header('/admin/users');
+    return header('location: /admin/users');
 }
