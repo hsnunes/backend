@@ -8,6 +8,7 @@ require __DIR__ . '/src/error_handler.php';
 require __DIR__ . '/src/resolve-router.php';
 require __DIR__ . '/src/render.php';
 require __DIR__ . '/src/flash.php';
+require __DIR__ . '/src/auth.php';
 
 // Verifica as rotas do usuário e encaminha para os diretorios seguintes
 if (resolve('/admin/?(.*)')) {

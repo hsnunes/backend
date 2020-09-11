@@ -12,3 +12,4 @@
 9- Implementando Flash Messages com PNotify;
 10- Pages criadas na Base de Dados;
 11- Implementando Usuarios;
+12- Implementando Autenticação;
